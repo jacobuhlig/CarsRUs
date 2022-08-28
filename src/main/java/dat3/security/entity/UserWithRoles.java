@@ -47,7 +47,7 @@ public class UserWithRoles implements UserDetails {
     private LocalDateTime created;
 
     @UpdateTimestamp
-    private LocalDateTime edited;
+    private LocalDateTime lastEdited;
 
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "ENUM('USER','ADMIN')")
